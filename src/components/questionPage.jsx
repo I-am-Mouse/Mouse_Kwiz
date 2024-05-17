@@ -27,7 +27,7 @@ const QuestionPage = () => {
 
       const scorePercentage = ((score / (questions.length * 10)) * 100).toFixed();
       
-      localStorage.setItem('result', (`Your score is ${score} out of ${questions.length * 10}. That's a ${scorePercentage}%!`));
+      localStorage.setItem('result', (`Your score is ${score} out of ${questions.length * 10}. That's ${scorePercentage}%!`));
       window.location.href = '/resultpage';
     };
 
