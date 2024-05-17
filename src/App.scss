@@ -1,0 +1,304 @@
+$yellow: gold;
+$black: #020D19;
+$mouse: hsl(227, 26%, 30%);
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Acme", sans-serif;
+  }
+
+  .flex {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  body {
+    background: url("./assets/images/background.jpg") no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 30px auto;
+  }
+
+  // HEADER 
+  header {
+    text-align: right;
+    button {
+      border: none;
+      padding: 7px 10px;
+      border-radius: 60% 100% 60% 100%;
+      background-color: $black;
+      color: $yellow;
+      font-size: 0.9rem;
+      box-shadow: 2px 2px $mouse;
+    }
+    button:hover {
+      box-shadow: 2px 2px $yellow;
+    }
+  }
+
+  // MAIN
+  main {
+    width: 100%;
+    div:first-child {
+      margin: 160px 0px 60px 0px;
+      h1 {
+        font-size: 3rem;
+        span {
+          color: $mouse;
+          text-shadow: 4px 4px 7px $mouse;
+          strong {
+            text-shadow: 2.5px 2.5px $black;
+          }
+        }
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+        a {
+          text-decoration: none;
+          color: $yellow;
+          p {
+            padding: 15px 50px 15px 15px;
+            margin: 12px 0px;
+            width: 400px;
+            border-radius: 10px;
+            border: 2px solid $black;
+            background-color: $black;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      p:hover {
+        cursor: pointer;
+        border-color: $yellow;
+      }
+    }
+  }
+
+  // QUESTION-PAGE
+  div.questionPage {
+    color: $yellow;
+    background-color: $black;
+    padding: 30px 30px;
+    border-radius: 20px;
+    margin: 70px auto;
+    
+      div:nth-child(1) {
+        h1 {
+          text-align: center;
+        }
+        p {
+          padding: 30px 0px 0px 50px;
+          font-size: 1.5rem;
+        }
+      }
+      div:nth-child(2) {
+        padding: 0px 35px;
+
+        nav ol li {
+          padding: 15px 50px 15px 15px;
+          margin: 20px 0px;
+          border-radius: 10px;
+          border: none;
+          background-color: $yellow;
+          color: $black;
+          font-size: 1rem;
+          display: flex;
+          justify-content: space-between;
+        }
+        nav ol li:hover {
+          background-color: $black;
+          color: $yellow;
+          border: 1px solid $yellow;
+        }
+      }
+  }
+
+  //QUESTION-CREATION-PAGE
+  div.questionCreation {
+    color: $yellow;
+    background-color: $black;
+    padding: 30px 30px;
+    border-radius: 20px;
+    margin: 30px 0px;
+    div {
+      padding: 3px 0px;
+    }
+    input {
+      margin: 2px 0px;
+      width: 80%;
+      padding: 7px;
+      border: none;
+      border-radius: 5px;
+    }
+    input:focus {
+      outline: none;
+    }
+    div.flex {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  // RESULT-PAGE
+  result {
+    div {
+      background-color: $black;
+      color: $yellow;
+      padding: 30px 10px;
+      border-radius: 20px;
+      margin: 30px auto;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+
+  //ADMIN-SIGNUP-PAGE
+  div.signup {
+    background-color: $black;
+    color: $yellow;
+    padding: 30px 10px;
+    border-radius: 20px;
+    margin: 30px auto;
+    font-size: 1.3rem;
+    text-align: center;
+    div {
+      margin: 10px 0px;
+    }
+    input{
+      padding: 5px 0px;
+      width: 80%;
+    }
+    input:focus {
+      outline: none;
+    }
+    #nope {
+      input {
+        width: 100px;
+      }
+    }
+  }
+
+   //ADMIN-LOGIN-PAGE
+  div.login {
+    background-color: $black;
+    color: $yellow;
+    padding: 30px;
+    border-radius: 20px;
+    width: 50%;
+    margin: 30px auto;
+    font-size: 1.3rem;
+    text-align: center;
+    div {
+      margin: 10px 0px;
+    }
+    input{
+      padding: 5px 0px;
+      width: 100%;
+    }
+    input:focus {
+      outline: none;
+    }
+    #nope {
+      input {
+        width: 60px;
+      }
+    }
+    #signup {
+      text-decoration: none;
+      font-size: 0.8rem;
+      background-color: white;
+      color: black;
+      padding: 6px 11px;
+      border-radius:3px;
+
+    }
+  }
+
+  //PROFILE-PAGE
+admin {
+  div {
+    background-color: $black;
+    color: $yellow;
+    padding: 30px 10px;
+    border-radius: 20px;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    // text-align: center;
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+  @media screen and (max-width: 760px) {
+
+  body {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  //MAIN
+    main {
+      flex-direction: column;
+      div:first-child {
+        margin: 0px 0px 0px 0px;
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+      div:nth-child(2) {
+        margin-top: 20px;
+        a {
+          p {
+            padding: 15px 30px 15px 15px;
+            margin: 12px 10px;
+            font-size: 1.4rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  // QUESTION-PAGE
+    div.questionPage {
+      padding: 20px 0px;
+      
+      div:nth-child(1) {
+        h1 {
+          text-align: center;
+          font-size: 1.5rem;
+        }
+        p {
+          padding: 30px 0px 0px 50px;
+          font-size: 1.2rem;
+        }
+      }
+      div:nth-child(2) {
+        padding: 0px 30px;
+
+        p {
+          padding: 15px 50px 15px 15px;
+          margin: 15px 0px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+
